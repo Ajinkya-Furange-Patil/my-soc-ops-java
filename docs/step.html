@@ -262,7 +262,10 @@
             if (checkboxes.length === 0) return;
 
             const allState = readCheckboxState();
-            const stepState = Array.isArray(allState[stepId]) ? allState[stepId] : (allState[stepId] = []);
+            if (!Array.isArray(allState[stepId])) {
+                allState[stepId] = [];
+            }
+            const stepState = allState[stepId];
 
             checkboxes.forEach((checkbox, index) => {
                 checkbox.disabled = false;
