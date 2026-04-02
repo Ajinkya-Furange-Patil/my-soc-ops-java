@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/01-setup.md" -->
 # Parte 1: Configuração & Engenharia de Contexto
 
-[🎮 Demo ao Vivo](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← Visão Geral](00-overview.md)
+[📚 Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← Visão Geral](00-overview.md)
 
 ---
 
@@ -13,7 +13,7 @@ Nesta seção, você vai configurar seu ambiente de desenvolvimento e ensinar o 
 
 ## 🔧 Configuração Inicial
 
-### Passo 1: Crie Seu Repositório
+### Passo 1: Crie Seu Próprio Repositório (obrigatório)
 
 1. Abra [github.com/copilot-dev-days/agent-lab-python](https://github.com/copilot-dev-days/agent-lab-python)
 2. Clique em **Use this template** → **Create a new repository**
@@ -21,20 +21,25 @@ Nesta seção, você vai configurar seu ambiente de desenvolvimento e ensinar o 
    - Visibilidade: **Public**
 3. ✅ Seu próprio repositório Soc Ops está pronto!
 
-### Passo 2: Ative o GitHub Pages
+### Passo 2: Escolha Como Abrir Seu Repositório
 
-1. Vá para **Settings** → **Pages** do seu repositório
-2. Em "Build and deployment", selecione **GitHub Actions**
-3. ✅ Cada commit agora será publicado em: `https://{username}.github.io/{repo-name}`
+Este repositório inclui um devcontainer pronto para uso (`.devcontainer/devcontainer.json`), então você pode trabalhar localmente ou no Codespaces.
 
-### Passo 3: Clone & Abra no VS Code
+#### Opção A: Clone & Abra no VS Code Local
 
 1. Abra o VS Code
 2. Execute o comando: `Git: Clone` → `Clone from GitHub`
 3. Selecione seu novo repositório
 4. Quando solicitado, instale as **extensões recomendadas**
 
-### Passo 4: Execute o Agente de Setup
+#### Opção B: Abra Seu Novo Repositório no GitHub Codespaces
+
+1. Abra seu repositório recém-criado no GitHub
+2. Clique em **Code** → **Codespaces** → **Create codespace on main**
+3. Aguarde a configuração terminar (o devcontainer executa `uv sync` automaticamente)
+4. ✅ Você pode iniciar o lab diretamente na experiência VS Code baseada no navegador
+
+### Passo 3: Execute o Agente de Setup (ambas as opções)
 
 No painel de Chat:
 
@@ -46,6 +51,10 @@ O agente vai:
 - Detectar seu ambiente
 - Instalar dependências faltantes
 - Iniciar o servidor de desenvolvimento
+
+> ⚠️ **Codespace no navegador:** Se você estiver executando o aplicativo dentro de um GitHub Codespace pelo navegador (não VS Code Desktop), os estilos e interações (ex.: o botão Start Game) podem não funcionar corretamente devido à autenticação de porta privada. Para corrigir, faça uma das opções:
+> 1. No painel **Ports** (barra inferior), clique com o botão direito na porta `8000` → **Port Visibility** → **Public**
+> 2. Ou abra o Codespace no **VS Code Desktop** (clique no menu hambúrguer `☰` → **Open in VS Code Desktop**)
 
 ✅ **Sucesso:** O aplicativo está rodando no seu navegador!
 
@@ -61,7 +70,7 @@ Instruções guiam todas as interações agênticas, tornando-as eficientes e co
 
 **Passos:**
 
-1. Execute o comando: `Chat: Generate Workspace Instructions File`
+1. Abra a Paleta de Comandos (`Ctrl+Shift+P` / `Cmd+Shift+P`) e execute: `Chat: Generate Agent Instructions`
 2. Aguarde o agente analisar sua base de código
 3. Revise as instruções geradas (provavelmente detalhadas demais!)
 4. Continue com:
@@ -75,13 +84,18 @@ Instruções guiam todas as interações agênticas, tornando-as eficientes e co
 
 ---
 
-### Tarefa 2: Agentes em Segundo Plano para Trabalho Paralelo
+### Tarefa 2: Copilot CLI e Cloud Agents para Trabalho Paralelo
 
-Agentes em segundo plano rodam em worktrees git isoladas — perfeitos para tarefas que não precisam de acompanhamento.
+Sessões do Copilot CLI rodam em worktrees git isoladas, o que é perfeito para tarefas que não precisam de acompanhamento.
 
-**Passos:**
+> 💡 **Três controles de interface para conhecer:**
+> - **Nova sessão (`+`)** (topo do painel de Chat) — crie um **New Chat**, **New Chat Editor**, **New Chat Window** ou **New Copilot CLI Session**
+> - **Dropdown de modo de chat** (canto inferior esquerdo da entrada do chat, mostra **Agent** por padrão) — escolha um modo (**Agent**, **Ask**, **Plan**) ou um agente customizado
+> - **Dropdown de tipo de sessão** (canto inferior esquerdo da entrada do chat, mostra **Local** por padrão) — transfira ou execute em um ambiente diferente: **Local**, **Copilot CLI** ou **Cloud**
 
-1. Clique em `+` no Chat → **New background agent**
+**Inicie uma sessão Copilot CLI:**
+
+1. No **dropdown de tipo de sessão** (canto inferior esquerdo, mostra **Local**), selecione **Copilot CLI**
 2. Digite:
    ```
    Add linting rules with ruff for unused vars and type hints; fix any errors
@@ -89,15 +103,25 @@ Agentes em segundo plano rodam em worktrees git isoladas — perfeitos para tare
 3. Deixe rodar, depois **Revise** e **Aplique** as mudanças
 4. Clique com o botão direito na sessão para deletá-la quando terminar
 
-**Experimente um Agente na Nuvem também:**
+**Inicie um Cloud Agent ou sessão Copilot CLI:**
 
-1. Clique em `+` → **New cloud agent**
-2. Digite:
-   ```
-   Make the README more engaging as a landing page to the project
-   ```
+> **Se você tem Copilot Pro, Business ou Enterprise:**
+>
+> 1. No **dropdown de tipo de sessão** (canto inferior esquerdo), selecione **Cloud**
+> 2. Digite:
+>    ```
+>    Make the README more engaging as a landing page to the project
+>    ```
 
-✅ **Resultado:** Regras de linting adicionadas, erros corrigidos, README melhorado — tudo mesclado de volta ao main!
+> **Se você está no plano gratuito (sem acesso ao Cloud):**
+>
+> 1. No **dropdown de tipo de sessão** (canto inferior esquerdo), selecione **Copilot CLI**
+> 2. Digite:
+>    ```
+>    Make the README more engaging as a landing page to the project
+>    ```
+
+✅ **Resultado:** Regras de linting adicionadas, erros corrigidos, README melhorado — tudo sem interromper seu workspace principal!
 
 ---
 
@@ -128,5 +152,5 @@ As instruções "sem gradientes roxos" desafiam o agente a pensar como um design
 Você aprendeu como:
 - Configurar seu ambiente de desenvolvimento
 - Gerar e refinar instruções de workspace
-- Usar agentes em segundo plano e na nuvem para trabalho paralelo
+- Usar background e cloud agents para trabalho paralelo
 - Entender arquivos de instruções existentes

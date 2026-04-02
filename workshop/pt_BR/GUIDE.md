@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/GUIDE.md" -->
 # Soc Ops — VS Code GitHub Copilot Agent Lab
 
-[🎮 Demo ao Vivo](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../../README.pt_BR.md)
+[📚 Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../README.md)
 
 ---
 
@@ -33,10 +33,10 @@
 ## 🚀 Configuração Rápida
 
 ```
-# 1. Use o template em github.com/copilot-dev-days/agent-lab-python
-# 2. Ative GitHub Pages (Settings > Pages > GitHub Actions)
-# 3. Clone no VS Code
-# 4. Execute /setup no Chat
+# Step 1: Use template to create your own repo
+# Step 2a (local): Clone your repo in VS Code
+# Step 2b (cloud): Open your repo in Codespaces (Code > Codespaces > Create codespace on main)
+# Then run /setup in Chat
 ```
 
 ---
@@ -45,22 +45,22 @@
 
 ### Parte 1: Engenharia de Contexto
 - [ ] Gerar instruções de workspace
-- [ ] Executar agente em segundo plano para linting
-- [ ] Executar agente na nuvem para o README
+- [ ] Executar sessão do Copilot CLI para linting
+- [ ] Executar cloud agent para o README
 - [ ] Revisar CSS & instruções de frontend
 
 ### Parte 2: Frontend Design-First  
-- [ ] Redesign completo da UI (Plan Mode)
+- [ ] Redesign completo da UI (Plan agent)
 - [ ] Atualizar copilot-instructions.md
 - [ ] Executar cloud-explore para variações
 
 ### Parte 3: Quiz Master
 - [ ] Gerar tema personalizado de quiz
-- [ ] Executar Quiz Master como agente na nuvem
+- [ ] Executar Quiz Master como cloud agent
 
 ### Parte 4: Desenvolvimento Multi-Agente
-- [ ] Modo Caça ao Tesouro (TDD Red → Green → Refactor)
-- [ ] Modo Baralho de Cartas (Pixel Jam)
+- [ ] Modo Scavenger Hunt (TDD Red → Green → Refactor)
+- [ ] Modo Card Deck Shuffle (Pixel Jam)
 - [ ] Revisão de UX
 
 ---

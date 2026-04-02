@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/00-overview.md" -->
-# 🎮 VS Code GitHub Copilot Agent Lab
+# 🎮 Laboratorio de Agentes de GitHub Copilot en VS Code
 
-[🎮 Jugar](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guía del Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../../README.es.md)
+[📚 Guía del Laboratorio](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../README.md)
 
 ---
 
@@ -9,50 +9,52 @@
 > **Nivel:** Intermedio  
 > **Stack:** Python / FastAPI / Jinja2 / HTMX
 
-Bienvenido a Soc Ops — un workshop práctico donde transformarás una aplicación simple de Bingo Social en algo increíble usando el Agent Mode de VS Code con GitHub Copilot.
+Bienvenido a Soc Ops — un taller práctico donde transformarás una aplicación simple de Bingo Social en algo increíble usando Agent Mode de VS Code con GitHub Copilot.
 
 ---
 
-## 📋 Lista Rápida
+## 📋 Lista de Verificación Rápida
 
 Antes de comenzar, verifica:
 
 - [ ] VS Code **v1.107+** (sin actualizaciones pendientes)
-- [ ] Sesión iniciada con **GitHub Copilot** (Pro, Business o Enterprise)
+- [ ] Sesión iniciada con **GitHub Copilot** (Free, Pro, Business o Enterprise)
+
+> ⚠️ **Usuarios del plan gratuito:** Los Cloud Agents no están disponibles en los planes gratuitos de Copilot. El taller proporciona instrucciones alternativas en cada lugar donde se usan Cloud Agents.
 - [ ] Git instalado
 - [ ] Python 3.13 & uv instalados
-- [ ] Panel de Chat abierto y Agente listo
+- [ ] Panel de Chat abierto y Agent listo
 
 > 💡 **Consejo:** ¡Usa el DevContainer para un entorno preconfigurado!
 
 ---
 
-## 🎯 Lo que Aprenderás
+## 🎯 Lo Que Aprenderás
 
 | # | Habilidad | Descripción |
 |---|-----------|-------------|
-| 1 | **Ingeniería de Contexto** | Enséñale a la IA sobre tu código base con instrucciones |
-| 2 | **Primitivas Agénticas** | Usa agentes en segundo plano, agentes en la nube y flujos personalizados |
-| 3 | **Desarrollo Design-First** | Deja que la IA itere en la UI mientras tú guías la visión |
-| 4 | **Desarrollo Guiado por Pruebas** | Usa agentes TDD para desarrollo confiable de funcionalidades |
+| 1 | **Context Engineering** | Enseña a la IA sobre tu código base con instrucciones |
+| 2 | **Primitivas Agénticas** | Usa sesiones de Copilot CLI, cloud agents y flujos de trabajo personalizados |
+| 3 | **Desarrollo Orientado al Diseño** | Deja que la IA itere en la interfaz mientras tú guías la visión |
+| 4 | **Desarrollo Guiado por Tests** | Usa agentes TDD para un desarrollo de funcionalidades confiable |
 
 ---
 
-## 📚 Partes del Lab
+## 📚 Partes del Laboratorio
 
 | Parte | Título | Tiempo | Descripción |
 |-------|--------|--------|-------------|
-| [**01**](01-setup.md) | Configuración & Ingeniería de Contexto | 15 min | Clona, configura y enséñale a la IA sobre tu proyecto |
-| [**02**](02-design.md) | Frontend Design-First | 15 min | Rediseña la UI con temas creativos |
+| [**01**](01-setup.md) | Configuración y Context Engineering | 15 min | Clona, configura y enseña a la IA sobre tu proyecto |
+| [**02**](02-design.md) | Desarrollo Frontend Orientado al Diseño | 15 min | Rediseña la interfaz con temas creativos |
 | [**03**](03-quiz-master.md) | Quiz Master Personalizado | 10 min | Crea tus propios temas de quiz con agentes personalizados |
 | [**04**](04-multi-agent.md) | Desarrollo Multi-Agente | 20 min | Construye nuevas funcionalidades con TDD y agentes de diseño |
 
 ---
 
-## 💡 Consejos
+## 💡 Consejos Pro
 
-1. **Mantén el navegador abierto** — Observa las actualizaciones en tiempo real mientras programas
-2. **Haz commits frecuentemente** — Guarda estados funcionales con frecuencia
-3. **Usa checkpoints** — Revierte cambios inesperados con Checkpoints & Undo del chat
+1. **Mantén el navegador abierto** — Observa las actualizaciones en vivo mientras programas
+2. **Haz commit con frecuencia** — Guarda estados funcionales frecuentemente
+3. **Usa checkpoints** — Revierte cambios inesperados con Checkpoints y Deshacer del chat
 4. **📌 Fija esta guía** — Mantenla visible mientras trabajas
 

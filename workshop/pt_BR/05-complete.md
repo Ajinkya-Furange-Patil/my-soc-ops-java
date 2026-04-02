@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/05-complete.md" -->
 # 🎉 Workshop Completo!
 
-[🎮 Jogar](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← Parte 4](04-multi-agent.md)
+[📚 Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← Parte 4](04-multi-agent.md)
 
 ---
 
@@ -19,7 +19,7 @@ Você completou o **VS Code GitHub Copilot Agent Lab**!
 - ✅ Temas de quiz personalizados com o agente Quiz Master
 - ✅ Modo Caça ao Tesouro (construído com TDD)
 - ✅ Modo Card Deck Shuffle (guiado por design)
-- ✅ Revisão de UX abrangente
+- ✅ Revisão abrangente de UX
 
 ---
 
@@ -28,7 +28,7 @@ Você completou o **VS Code GitHub Copilot Agent Lab**!
 | Habilidade | Descrição |
 |------------|-----------|
 | **Engenharia de Contexto** | Ensinar a IA sobre sua base de código com instruções |
-| **Primitivas Agênticas** | Agentes em segundo plano, agentes na nuvem e fluxos personalizados |
+| **Primitivas Agênticas** | Sessões Copilot CLI, cloud agents e fluxos de trabalho personalizados |
 | **Desenvolvimento Design-First** | Iteração de UI com assistência de IA |
 | **Desenvolvimento Orientado a Testes** | Código confiável com agentes TDD |
 

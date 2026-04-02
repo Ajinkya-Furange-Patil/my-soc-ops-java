@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/03-quiz-master.md" -->
 # Parte 3: Quiz Master Personalizado
 
-[🎮 Demo ao Vivo](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guia do Lab](GUIDE.md) • [← Parte 2](02-design.md)
+[📚 Guia do Lab](GUIDE.md) • [← Parte 2](02-design.md)
 
 ---
 
@@ -26,8 +26,8 @@ Agentes personalizados são definidos em `.github/agents/` e fornecem:
 
 ### Passos
 
-1. Inicie um **novo Chat**
-2. Selecione **Quiz Master** como agente personalizado (no seletor de agentes)
+1. No **menu suspenso de modo de chat** (canto inferior esquerdo da entrada de chat), você verá os modos integrados (**Agent**, **Ask**, **Plan**) e os agentes personalizados listados abaixo deles. Selecione **Quiz Master**
+2. Certifique-se de que o **menu suspenso de tipo de sessão** mostre **Local**
 3. Digite seu tema:
    ```
    Update questions to [YOUR THEME]
@@ -37,22 +37,23 @@ Agentes personalizados são definidos em `.github/agents/` e fornecem:
    Update quiz
    ```
 
-4. Revise as perguntas geradas
-5. Continue pedindo mais criatividade:
+5. Revise as perguntas geradas
+6. Continue pedindo mais criatividade:
    ```
    Make them more chaotic and unexpected!
    ```
+7. Quando estiver satisfeito com o resultado, faça **commit** das perguntas atualizadas
 
 ### 🎭 Ideias de Temas
 
 | Categoria | Temas |
 |-----------|-------|
-| **Professional** | Skill Bingo, Team Bingo, Work Culture Bingo |
-| **Personal** | Personality Bingo, Lifestyle Bingo, Travel Bingo |
+| **Profissional** | Skill Bingo, Team Bingo, Work Culture Bingo |
+| **Pessoal** | Personality Bingo, Lifestyle Bingo, Travel Bingo |
 | **Tech** | Tech Life Bingo, Fandom Bingo, Dev Memes Bingo |
-| **Interactive** | Secret Challenge Bingo, Micro-Challenge Bingo, Mystery Bingo |
-| **Fun** | Office Humor Bingo, Chaos Bingo, Opposites Bingo |
-| **Deep** | Deep Chat Bingo, Creative Bingo, Reflective Bingo |
+| **Interativo** | Secret Challenge Bingo, Micro-Challenge Bingo, Mystery Bingo |
+| **Diversão** | Office Humor Bingo, Chaos Bingo, Opposites Bingo |
+| **Profundo** | Deep Chat Bingo, Creative Bingo, Reflective Bingo |
 
 ### Descrições dos Temas
 
@@ -68,19 +69,31 @@ Agentes personalizados são definidos em `.github/agents/` e fornecem:
 
 ## ☁️ Tarefa: Geração de Quiz na Nuvem
 
-Execute o quiz master como um agente na nuvem para geração assíncrona.
+Execute o quiz master como um cloud agent para geração assíncrona.
 
 ### Passos
 
-1. Clique em `+` → **New cloud agent**
-2. Selecione **Quiz Master**
-3. Digite um tema diferente:
-   ```
-   Create a Tech Life Bingo with questions about 
-   coding habits, IDE preferences, and developer culture
-   ```
-4. Deixe rodar em segundo plano
-5. Revise o PR quando estiver pronto
+> **Se você tem Copilot Pro, Business ou Enterprise:**
+>
+> 1. No **menu suspenso de modo de chat** (canto inferior esquerdo da entrada de chat), selecione **Quiz Master**
+> 2. No **menu suspenso de tipo de sessão** (canto inferior esquerdo), selecione **Cloud**
+> 3. Digite um tema diferente:
+>    ```
+>    Create a Tech Life Bingo with questions about 
+>    coding habits, IDE preferences, and developer culture
+>    ```
+> 4. Deixe rodar em segundo plano
+> 5. Revise o PR quando estiver pronto
+
+> **Se você está no plano gratuito (sem acesso ao Cloud):**
+>
+> 1. No **menu suspenso de modo de chat** (canto inferior esquerdo da entrada de chat), selecione **Quiz Master**
+> 2. Mantenha o **menu suspenso de tipo de sessão** configurado como **Local**
+> 3. Digite um tema diferente:
+>    ```
+>    Create a Tech Life Bingo with questions about 
+>    coding habits, IDE preferences, and developer culture
+>    ```
 
 ✅ **Resultado:** O agente personalizado gera perguntas criativas e temáticas enquanto você continua trabalhando.
 

@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/GUIDE.md" -->
-# Soc Ops — VS Code GitHub Copilot Agent Lab
+# Soc Ops — Laboratorio de Agentes de GitHub Copilot en VS Code
 
-[🎮 Demo en Vivo](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guía del Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../../README.es.md)
+[📚 Guía del Laboratorio](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../README.md)
 
 ---
 
@@ -9,19 +9,19 @@
 
 ---
 
-## 📚 Partes del Lab
+## 📚 Partes del Laboratorio
 
 | Parte | Título | Tiempo |
 |-------|--------|--------|
-| [**00**](00-overview.md) | Descripción General & Lista de Verificación | — |
-| [**01**](01-setup.md) | Configuración & Ingeniería de Contexto | 15 min |
-| [**02**](02-design.md) | Frontend Design-First | 15 min |
+| [**00**](00-overview.md) | Visión General y Lista de Verificación | — |
+| [**01**](01-setup.md) | Configuración y Context Engineering | 15 min |
+| [**02**](02-design.md) | Desarrollo Frontend Orientado al Diseño | 15 min |
 | [**03**](03-quiz-master.md) | Quiz Master Personalizado | 10 min |
 | [**04**](04-multi-agent.md) | Desarrollo Multi-Agente | 20 min |
 
 ---
 
-## ⚡ Lista Rápida
+## ⚡ Lista de Verificación Rápida
 
 - [ ] VS Code **v1.107+**
 - [ ] GitHub Copilot (Pro/Business/Enterprise)
@@ -33,30 +33,30 @@
 ## 🚀 Configuración Rápida
 
 ```
-# 1. Usa el template en github.com/copilot-dev-days/agent-lab-python
-# 2. Activa GitHub Pages (Settings > Pages > GitHub Actions)
-# 3. Clona en VS Code
-# 4. Ejecuta /setup en Chat
+# Paso 1: Use template to create your own repo
+# Paso 2a (local): Clone your repo in VS Code
+# Paso 2b (cloud): Open your repo in Codespaces (Code > Codespaces > Create codespace on main)
+# Then run /setup in Chat
 ```
 
 ---
 
 ## 📋 Resumen de Tareas
 
-### Parte 1: Ingeniería de Contexto
-- [ ] Generar instrucciones de workspace
-- [ ] Ejecutar agente en segundo plano para linting
-- [ ] Ejecutar agente en la nube para el README
-- [ ] Revisar CSS & instrucciones de frontend
+### Parte 1: Context Engineering
+- [ ] Generar instrucciones del workspace
+- [ ] Ejecutar sesión de Copilot CLI para linting
+- [ ] Ejecutar cloud agent para el README
+- [ ] Revisar instrucciones de CSS y frontend
 
-### Parte 2: Frontend Design-First  
-- [ ] Rediseño completo de la UI (Plan Mode)
+### Parte 2: Desarrollo Frontend Orientado al Diseño
+- [ ] Rediseño completo de la interfaz (Plan agent)
 - [ ] Actualizar copilot-instructions.md
 - [ ] Ejecutar cloud-explore para variaciones
 
 ### Parte 3: Quiz Master
-- [ ] Generar tema personalizado de quiz
-- [ ] Ejecutar Quiz Master como agente en la nube
+- [ ] Generar tema de quiz personalizado
+- [ ] Ejecutar Quiz Master como cloud agent
 
 ### Parte 4: Desarrollo Multi-Agente
 - [ ] Modo Búsqueda del Tesoro (TDD Red → Green → Refactor)
@@ -79,8 +79,8 @@ Skill Bingo • Tech Life • Chaos Bingo • Travel • Fandom • Office Humor
 
 ## 💡 Consejos
 
-1. Mantén el navegador abierto para actualizaciones en tiempo real
-2. Haz commits frecuentemente con el código funcionando  
+1. Mantén el navegador abierto para ver actualizaciones en vivo
+2. Haz commit del código funcional con frecuencia
 3. Usa checkpoints para revertir errores
 4. Itera en los planes 2+ veces antes de implementar
 

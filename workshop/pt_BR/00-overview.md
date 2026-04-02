@@ -1,7 +1,7 @@
 <!-- l10n-sync: source-file="workshop/00-overview.md" -->
 # 🎮 VS Code GitHub Copilot Agent Lab
 
-[🎮 Jogar](https://copilot-dev-days.github.io/agent-lab-python/) • [📚 Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../../README.pt_BR.md)
+[📚 Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../README.md)
 
 ---
 
@@ -9,7 +9,7 @@
 > **Nível:** Intermediário  
 > **Stack:** Python / FastAPI / Jinja2 / HTMX
 
-Bem-vindo ao Soc Ops — um workshop prático onde você vai transformar um aplicativo simples de Bingo Social em algo incrível usando o Agent Mode do VS Code com GitHub Copilot.
+Bem-vindo ao Soc Ops — um workshop prático onde você vai transformar um aplicativo simples de Social Bingo em algo incrível usando o Agent Mode do VS Code com GitHub Copilot.
 
 ---
 
@@ -18,10 +18,12 @@ Bem-vindo ao Soc Ops — um workshop prático onde você vai transformar um apli
 Antes de começar, verifique:
 
 - [ ] VS Code **v1.107+** (sem atualizações pendentes)
-- [ ] Logado com **GitHub Copilot** (Pro, Business ou Enterprise)
+- [ ] Conectado com **GitHub Copilot** (Free, Pro, Business ou Enterprise)
+
+> ⚠️ **Usuários do plano gratuito:** Cloud Agents não estão disponíveis nos planos gratuitos do Copilot. O workshop fornece instruções alternativas sempre que Cloud Agents são utilizados.
 - [ ] Git instalado
 - [ ] Python 3.13 & uv instalados
-- [ ] Painel de Chat aberto e Agente pronto
+- [ ] Painel de Chat aberto e Agent pronto
 
 > 💡 **Dica:** Use o DevContainer para um ambiente pré-configurado!
 
@@ -32,7 +34,7 @@ Antes de começar, verifique:
 | # | Habilidade | Descrição |
 |---|------------|-----------|
 | 1 | **Engenharia de Contexto** | Ensine a IA sobre sua base de código com instruções |
-| 2 | **Primitivas Agênticas** | Use agentes em segundo plano, agentes na nuvem e fluxos personalizados |
+| 2 | **Primitivas Agênticas** | Use sessões do Copilot CLI, cloud agents e fluxos de trabalho personalizados |
 | 3 | **Desenvolvimento Design-First** | Deixe a IA iterar na UI enquanto você guia a visão |
 | 4 | **Desenvolvimento Orientado a Testes** | Use agentes TDD para desenvolvimento confiável de funcionalidades |
 
@@ -49,10 +51,9 @@ Antes de começar, verifique:
 
 ---
 
-## 💡 Dicas
+## 💡 Dicas Pro
 
 1. **Mantenha o navegador aberto** — Acompanhe as atualizações em tempo real enquanto programa
 2. **Faça commits frequentemente** — Salve estados funcionais com frequência
 3. **Use checkpoints** — Reverta mudanças inesperadas com Checkpoints & Undo do chat
 4. **📌 Fixe este guia** — Mantenha-o visível enquanto trabalha
-

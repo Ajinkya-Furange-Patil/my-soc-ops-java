@@ -1,9 +1,9 @@
 <!-- l10n-sync: source-file="README.md" -->
+🌐 [Português (BR)](README.pt_BR.md) | [Español](README.es.md)
+
 # Soc Ops
 
 Jogo de Bingo Social para encontros presenciais. Encontre pessoas que correspondam às perguntas e consiga 5 em linha!
-
-🎮 **[Jogar](https://copilot-dev-days.github.io/agent-lab-python/)** • 📚 **[Ver Guia do Lab](https://copilot-dev-days.github.io/agent-lab-python/docs/)**
 
 ---
 
@@ -17,40 +17,10 @@ Jogo de Bingo Social para encontros presenciais. Encontre pessoas que correspond
 | [**03**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=03-quiz-master) | Quiz Master Personalizado |
 | [**04**](https://copilot-dev-days.github.io/agent-lab-python/docs/step.html?step=04-multi-agent) | Desenvolvimento Multi-Agente |
 
-> 📝 Os guias do lab também estão disponíveis na pasta [`workshop/pt_BR/`](workshop/pt_BR/) para leitura offline.
+> 📝 Os guias do lab também estão disponíveis na pasta [`workshop/`](workshop/) para leitura offline.
 
 ---
 
-## Pré-requisitos
+## 🚀 Primeiros Passos
 
-- [Python 3.13](https://www.python.org/downloads/) ou superior
-- [uv](https://docs.astral.sh/uv/) gerenciador de pacotes
-
-## Configuração
-
-```bash
-uv sync
-```
-
-## Executar
-
-```bash
-uv run uvicorn app.main:app --reload
-```
-
-Depois abra http://localhost:8000 no seu navegador.
-
-## Testes
-
-```bash
-uv run pytest
-```
-
-## Lint
-
-```bash
-uv run ruff check .
-uv run ruff format .
-```
-
-Deploys automáticos para GitHub Pages a cada push no `main`.
+Acesse **[Parte 00: Visão Geral](https://copilot-dev-days.github.io/agent-lab-python/step.html?step=00-overview)** para pré-requisitos e instruções de configuração.
