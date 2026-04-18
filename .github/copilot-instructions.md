@@ -52,8 +52,15 @@ tests/                   # pytest tests (API & game logic)
 ## Code Style & Standards
 
 - **Python 3.13+** with type hints (required on all functions)
-- **Linter**: ruff (E, F, I, N, W rules; line length: 88)
-- **Testing**: pytest with `TestClient` from `fastapi.testclient`
+- **Linter**: ruff with rules:
+  - `E`: PEP 8 errors
+  - `F`: Pyflakes (unused variables, undefined names)
+  - `I`: Import sorting
+  - `N`: Naming conventions
+  - `W`: Warnings
+  - `ANN`: Type hint enforcement (all functions must have return type annotations)
+  - `ARG`: Unused arguments detection
+- **Line Length**: 88 characters
 - **Naming**: snake_case for functions, PascalCase for classes
 
 ## Guides & References
